@@ -17,14 +17,14 @@ print(odd_numbers)  # проверка возведения в куб
 total_sum = 0
 
 for number in odd_numbers:
-    sum = 0
+    sum_digits = 0
     #print('число ' + str(number)) #проверка у какого число из списка суммируется цифры
     while number > 0:
-        sum = sum + number % 10
+        sum_digits = sum_digits + number % 10
         number = number // 10
     #print('сумма ' + str(sum)) #проверка суммы цифр
-    if sum % 7 == 0:
-        total_sum = total_sum + sum
+    if sum_digits % 7 == 0:
+        total_sum = total_sum + sum_digits
 print('сумма чисел списка, сумма цифр которых делится нацело на 7: ', total_sum)
 
 
@@ -38,12 +38,12 @@ print(odd_numbers)
 total_sum = 0
 
 for number in odd_numbers:
-    sum = 0
+    sum_digits = 0
     while number > 0:
-        sum += number % 10
+        sum_digits += number % 10
         number = number // 10
-    if sum % 7 == 0:
-        total_sum += sum
+    if sum_digits % 7 == 0:
+        total_sum += sum_digits
 print('сумма чисел списка, сумма цифр которых делится нацело на 7: ', total_sum)
 
 
@@ -59,22 +59,22 @@ print(odd_numbers)
 total_sum = 0
 
 for number in odd_numbers:
-    sum = 0
+    sum_digits = 0
     while number > 0:
-        sum += number % 10
+        sum_digits += number % 10
         number = number // 10
-    if sum % 7 == 0:
-        total_sum += sum
+    if sum_digits % 7 == 0:
+        total_sum += sum_digits
 print('сумма чисел списка, сумма цифр которых делится нацело на 7: ', total_sum)
 
 # выполнение задания 2с, без создания нового списка к каждому эл-ту добавить 17
 total_sum = 0  # обнуление счетчика
 for number in odd_numbers:
     number += 17
-    sum = 0
+    sum_digits = 0
     while number > 0:
-        sum = sum + number % 10
+        sum_digits = sum_digits + number % 10
         number = number // 10
-    if sum % 7 == 0:
-       total_sum = total_sum + sum
+    if sum_digits % 7 == 0:
+       total_sum = total_sum + sum_digits
 print('сумма чисел списка + 17, сумма цифр которых делится нацело на 7: ', total_sum)
